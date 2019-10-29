@@ -10,9 +10,20 @@
 (function() {
 
     //your code here
+    
+    console.log(artArray)
 
-    writeAscii(artArray);
+    for (let a=1; a <= artArray.length; a++){
+        artArray.splice(a, 1)
+        
+    }
+    writeAscii(artArray)
+    ;
 
-})();
+
+
+    
+
+}());
 
 

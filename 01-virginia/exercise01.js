@@ -16,4 +16,8 @@
 
     //your code here
 
+    let str =  washingtonInfo 
+    let res = str.match(/Virginia/gi);
+    console.log(res.length)
+    
 })();

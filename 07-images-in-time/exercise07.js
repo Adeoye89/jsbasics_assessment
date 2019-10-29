@@ -25,11 +25,34 @@
    * @param {String} name an image filename
    */
   function addImage(name) {
-    var img = document.createElement('img');
-    img.src = name;
-    document.getElementById('image-box').appendChild(img);
+    var imageElement = document.createElement('img');
+    imageElement.src = name;
+    console.log(imageElement)
+    let imageBoxElement = document.getElementById('image-box')
+    imageBoxElement.appendChild(imageElement);
   }
 
   //your code here
+
+
+  let images = ["assets/images/cats.jpg", "assets/images/hugger.jpg", "assets/images/internet.jpg", "assets/images/jackson.jpg", "assets/images/washington.jpg"]
+
+ 
+
+  
+
+  // addImage(images[0])
+  
+
+  function myTimeoutFunction() {
+    let randomNumber = Math.round(Math.random() * 4)
+    addImage(images[randomNumber])
+    setTimeout(myTimeoutFunction, 2500);
+  }
+
+  myTimeoutFunction();
+
+  
+  
 
 })();
