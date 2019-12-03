@@ -43,6 +43,15 @@
     title.addEventListener("click", changecolor)
     console.log(title)
 
+//      The links on the side of the page – "your name," "section 1," "section 2," etc. –
+//      hide every odd-numbered link in the menu.
+
+    let sectionElements = document.querySelectorAll("section");
+    //console.log(sectionElements)
+    sectionElements[0].remove()
+    sectionElements[2].remove()
+    sectionElements[4].remove()
+
 
     // Change every instance of the word "bacon" on the page to be "LASER VISION"
 
@@ -56,14 +65,14 @@
 
     
 
-    let word = document.getElementByClass("large-10 columns");
-    word.innerHTML = word.innerHTML.replace('bacon', 'LASER VISION');
-    (function () {
-        var x = document.querySelectorAll(".post p ");
-        if (x.length - 1 > 0) {
-            x.remove(x.length - 1);
-        }
-    })();
+    // let word = document.getElementByClass("large-10 columns");
+    // word.innerHTML = word.innerHTML.replace('bacon', 'LASER VISION');
+    // (function () {
+    //     var x = document.querySelectorAll(".post p ");
+    //     if (x.length - 1 > 0) {
+    //         x.remove(x.length - 1);
+    //     }
+    // })();
 
 
 
